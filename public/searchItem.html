@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>물품 찾기 페이지(feat. mysql, nodejs)</title>
+    </head>
+    <body>
+        <h1>물품 찾기 페이지(매장직원용)</h1>
+        <br>
+        <form method="post" action="/process/findItem"> <!-- form이 서버에게 데이터를 보냄 post, get // action은 누구에게 보내줘임-->
+            <table>
+                <tr>
+                    <td><label>제품 이름을 입력해주세요</label></td>
+                    <td><input type="text" name="searching"></td>
+                    <script src="svrItemQuery.js"></script>
+            </table>
+            <input type="submit" value="검색"> <!--버튼 이거 누르면 form 안에 애들 다 들어감 서버로-->
+        </form>
+        
+    </body>
+</html>

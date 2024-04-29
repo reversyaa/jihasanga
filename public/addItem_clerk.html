@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>sign up 페이지(feat. mysql, nodejs)</title>
+    </head>
+    <body>
+        <h1>아이템 추가 페이지</h1>
+        <br>
+        <form method="post" action="/process/addItem"> <!-- form이 서버에게 데이터를 보냄 post, get // action은 누구에게 보내줘임-->
+            <table>
+                <!--
+                <tr>
+                    <td><label>담당 매장 ID</label></td>
+                    <td><input type="text" name="shopID"></td>
+                </tr>
+                -->
+                <tr>
+                    <td><label>제품명</label></td>
+                    <td><input type="text" name="itemNAME"></td>
+                </tr>
+                <!--
+                <tr>
+                    <td><label>제품 ID</label></td>
+                    <td><input type="text" name="age"></td>
+                </tr>
+                -->
+            </table>
+            <input type="submit" value="품목 종류 추가"> <!--버튼 이거 누르면 form 안에 애들 다 들어감 서버로-->
+        </form>
+        
+    </body>
+</html>

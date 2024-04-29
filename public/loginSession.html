@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--페이지의 너비를 기기의 화면 너비에 맞게 설정하는 줄 : 반응형 웹 페이지용-->
+        <title>Login/Logout Session</title>
+    </head>
+    <body>
+        <h1>Login/Logout Session</h1>
+        <div id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="loggedIn" style="display: none;">
+        <p>Welcome, <span id="loggedInUsername"></span>!</p>
+        <button onclick="logout()">Logout</button>
+        </div>
+        <script src="loginClient.js"></script>
+    </body>
+</html>
